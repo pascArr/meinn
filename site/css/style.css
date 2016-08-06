@@ -4,8 +4,8 @@
 body {
   font-size: 16px;
   color: #fff;
-  background-color: #8BC34A;
-  /* This property comes from google.com/fonts/quick-use*/
+  background-color: #330033;
+  /* This property comes from google.com/fonts*/
   font-family: 'Rokkitt', serif;
   font-weight:400;
 }
@@ -13,38 +13,38 @@ body {
 /** HEADER **/
 #header-nav {
   /*background-color: #a3d5d3;*/
-  background-color:green;
+  background-color:#aaaa99;
   border-radius: 0;
   border: 0;
 }
 
 #logo-img {
-  background: url('../images/FlowerSeriesLOGO.png') no-repeat;
-  width: 200px;
+  background: url('../images/meiLogo250.png') no-repeat;
+  width: 250px;
   height: 200px;
-  margin: 10px 15px 10px 0;
+  margin: 25px 15px 10px 0;
 }
 
 .navbar-header {
 
-  height:150px;
+  height:220px;
 
 }
 .navbar-brand {
-  padding-top: 25px;
+  padding: 25px 25px 25px 25px;
 
 }
 
-.navbar-brand h1 { /* Website name */
-  font-family: 'Roboto', sans-serif;
-  color: #7C84C8;
+.navbar-brand h1 { /* Landing Page Opening */
+  
+  color: #ffffff;
   font-size: 1.5em;
   text-transform: uppercase;
-  font-weight: 700;
-  text-shadow: 1px 1px 1px #222;
+  text-shadow: 2px 2px 2px #222;
   margin-top: 0;
   margin-bottom: 0;
-  line-height: .75;
+  padding-left:45px;
+  line-height: 1.5;
 }
 .navbar-brand a:hover, .navbar-brand a:focus {
   text-decoration: none;
@@ -161,16 +161,17 @@ body {
   padding-bottom: 30px;
   background-color: #222;
   border-top: 0;
-  height:200px;
+  height:230px;
 }
 .panel-footer div.row {
   margin-bottom: 35px;
+
 }
-#hours, #address {
+#org, #address {
   line-height: 2;
   text-align:center;
 }
-#hours > span, #address > span {
+#org > span, #address > span {
   font-size: 1.3em;
 }
 #address p {
@@ -179,12 +180,11 @@ body {
   line-height: 1.8;
   
 }
-#testimonials {
-  font-style: italic;
+#contact {
   width:300px;
   margin:0px 0px 0px 30px;
 }
-#testimonials p:nth-child(2) {
+#contact p:nth-child(2) {
   margin-top: 25px;
 }
 /* END FOOTER */
@@ -197,7 +197,7 @@ body {
 
 
   .container .jumbotron {
-    background: url('../images/lettuce-1200.jpeg') no-repeat;
+    background: url('../images/??????') no-repeat;
     height: 675px;
     box-shadow: 0 0 50px  #d2e8bf;
     border: 2px solid #aad489;
@@ -230,26 +230,49 @@ body {
     text-align: center;
 }
 
-  #testimonials {
+  #contact {
     font-style: italic;
     width:300px;
     margin-left:75px;
   }
-  #testimonials p:nth-child(2) {
+  #contact p:nth-child(2) {
     margin-top: 25px;
   }
 
-
+.panel-footer div.row {
+  margin-bottom: 35px;
+ 
 
 }
 
+/*Ipad*/
+
 @media (min-width: 992px) and (max-width: 1199px ){
 
+.navbar-header {
+  height:200px;
+} 
+
+.navbar-brand h1 { /* Landing Page Opening */
+  
+  color: #ffffff;
+  font-size: 1.3em;
+  text-transform: uppercase;
+  text-shadow: 2px 2px 2px #222;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left:30px;
+  line-height: 1.5;
+}
+.navbar-brand a:hover, .navbar-brand a:focus {
+  text-decoration: none;
+}
+
 #logo-img {
-  background: url('../images/FlowerSeriesLOGO.png') no-repeat;
-  width: 200px;
+  background: url('../images/meiLogo250.png') no-repeat;
+  width: 250px;
   height: 200px;
-  margin: 10px 15px 10px 0;
+  margin: 25px 15px 10px 0;
 }
 
 #nav-list{
@@ -305,6 +328,11 @@ body {
   #testimonials p:nth-child(2) {
     margin-top: 25px;
   }
+.panel-footer {
+  
+  height:250px;
+}
+
 
 }
 
