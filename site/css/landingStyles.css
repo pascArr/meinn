@@ -27,76 +27,14 @@ body {
   border: 0;
 }
 
-.navbar-header {
-  height:200px;
-  padding-top: 10px;
 
-}
 
-.navbar-brand h1 { /* Website name */
-  padding-top: 25px;
-  font-family: 'Roboto', sans-serif;
-  color: #7C84C8;
-  font-size: 1.5em;
-  text-transform: uppercase;
-  font-weight: 700;
-  text-shadow: 1px 1px 1px #222;
-  margin-top: 0;
-  margin-bottom: 0;
-  line-height: .75;
-}
-.navbar-brand a:hover, .navbar-brand a:focus {
-  text-decoration: none;
-}
-
-/** HEADER / NAVIGATION LIST **/
-
-#nav-list {
-  margin-top: 10px;
-}
-
-#nav-list a {
-  font-size: 1.2em;
-  text-align: center;
-  color:#263238;
-}
-
-#nav-list a:hover {
-  
-  background-color:#8BC34A;
-
-}
-
-#nav-list a span {
-
-  font-size:1.8em;
-}
 
 #section{
   height:1000px;
 }
 
-#offset{
-  margin-top: 75px;
-}
 
-.navbar-header button.navbar-toggle, .navbar-header .icon-bar {
-  border: 1px solid green;
-  background-color:#ddd;
-}
-.navbar-header button.navbar-toggle {
-  clear: both;
-  margin-top: -30px;
-}
-
-/**
-.full-width-image-2 {
-  background: url(../images/faces1920.png) no-repeat center center;
-  background-size: cover;
-  text-align: center;
-  height: 912px;
-}
-**/
 
 .bgimage {
 background-image: url(../images/faces1170.jpg);
@@ -108,20 +46,6 @@ padding-top:48%;
 
 }
   
-
-/**
-.logo-wrapper {
-  padding: 100px inherit;
-  display: inline-block;
-}
-**/
-
-/**
-.section {
-  padding-top: 75px;
-  padding-bottom: 75px;
-}
-**/
 
 h1.section-heading {
   font-family: 'Rokkitt';
@@ -157,11 +81,6 @@ footer {
 .navbar-ex1-collapse {
   width:100%;
 }
-
-
-/**HEADER END**/
-
-/**HOME PAGE**/
 
 
 h1 {
@@ -204,9 +123,20 @@ p {
 
 /**RESPONSIVE FEATURE**/
 
-/** DESKTOPS & NOTEBOOKS **/
+/**>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> DESKTOPS & NOTEBOOKS **/
 
 @media (min-width: 1200px){
+
+#offset{
+  margin-top: 200px;
+}
+
+
+.navbar-header {
+  height:200px;
+  padding-top: 10px;
+
+}  
 
 .container {
     width: 100%;
@@ -220,9 +150,21 @@ p {
 
 }
 
-/** TABLETS - HORIZONTAL **/
+/**>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> TABLETS - HORIZONTAL **/
 
 @media (min-width: 992px) and (max-width: 1199px ){
+
+
+#offset{
+  margin-top: 129px;
+}
+
+
+.navbar-header {
+  height:130px;
+  padding-top: 10px;
+
+}  
 
 .container {
  width: 100%;
@@ -230,71 +172,73 @@ p {
 
 .img-responsive{
   max-width:75%;
-  padding: 20px 10px 0px 0px;
+  padding: 10px 10px 0px 0px;
 }
 
-.navbar-header {
-
-  height:150px;
-}
 
 h1.section-heading {
     font-size: 3em;
 
 }
 
-/** PHONES - HORIZONTAL **/
+/** >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>PHONES - HORIZONTAL **/
 
-@media (min-width: 376px ) and (max-width: 767px){  
+@media screen and (min-width: 376px ) and (max-width: 767px){  
+
+#offset{
+  margin-top: 150px;
+}
 
 
+.img-responsive{
+  max-width:100%;
+  padding: 10px 10px 0px 0px;
+}
 
 .navbar-header {
 
-  height:75px;
+  height:60px;
 }
 
 h1.section-heading {
-    font-size: 1em;
+    font-size: 2em;
 
 }
 
 
 }
 
-/** TABLETS - VERTICAL*/
+/** >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> TABLETS - VERTICAL*/
 
 @media (min-width: 768px) and (max-width: 991px ){
 
+#offset{
+  margin-top: ;
+}
+
+
+.navbar-header {
+  height:130px;
+  padding-top: 10px;
+
+}  
+
 .container {
  width: 100%;
- height:auto;
 }    
 
 .img-responsive{
   max-width:75%;
-  padding: 20px 10px 0px 0px;
+  padding: 10px 10px 0px 0px;
 }
 
-#header-nav {
-  height:160px;
-
-}
-
-
-.navbar-header {
-  height:150px;
-  
-}
 
 h1.section-heading {
-  font-size: .2em;
+    font-size: 3em;
 
 }
 
-}
-
-/** PHONES - VERTICAL **/
+/** >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>PHONES - VERTICAL **/
 
 @media (max-width: 375px){
 
