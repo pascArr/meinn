@@ -76,13 +76,73 @@ h1.section-heading {
   width:100%;
 }
 
-.btn-lg{
+.btn-lg {
   padding-top: 15px;
   font-size:2em;
   font-weight:900;
   font-family:"Roboto";
   color:white;
+  border-radius:0;
+  background-color: #5a3565;
+  border: none;
+  transition: all 0.5s;
+  cursor: pointer;
+  text-align: center;
+  transition: all 0.5s;
+  cursor: pointer;
+
 }
+
+
+.btn:focus, .btn:active:focus, .btn.active:focus {
+    outline: 0 none;
+}
+ 
+
+.btn-primary:hover, .btn-primary:focus, .btn-primary:active, .btn-primary:active {
+    background-color: #5a3565;
+}
+ 
+.btn-primary:active, .btn-primary.active {
+    background-color: #5a3565;
+    box-shadow: none;
+}
+.btn-lg span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+  background-color: #5a3565;
+}
+
+.btn-lg span:after {
+  content: '»';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+  background-color: #5a3565;
+}
+
+.btn-lg:hover span {
+  padding-right: 25px;
+  background-color: #5a3565;
+}
+
+.btn-primary:hover{
+  background-color:#5a3565;
+}
+
+.btn-lg:hover span:after {
+  opacity: 1;
+  right: 0;
+  background-color: #5a3565;
+}  
+
+
+
+
 
 h1 {
   margin-top: 5%;
@@ -125,6 +185,29 @@ p {
   
 }
 
+.row{
+
+}
+
+#box{
+  width:500px;
+  position:relative;
+  margin:auto;
+
+}
+
+.center-block {  
+  display: block;  
+  margin-right: auto;  
+  margin-left: auto;  
+}  
+
+
+form {
+  align-content: center;
+
+}
+
 /**RESPONSIVE FEATURE**/
 
 /**>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> DESKTOPS & NOTEBOOKS **/
@@ -135,6 +218,26 @@ p {
   margin-top: 160px;
 }
 
+.btn-lg span{
+  margin-right: 75px;
+  font-size:4em;
+  
+
+
+
+}
+
+.btn-lg span:after {
+  content: '»';
+  right:10px;
+  width:10px;
+  position:relative;
+  padding: 0 50px 0 50px;
+  background-color:none;
+
+  
+  
+}
 .navbar-header {
   height:160px;
   padding-top: 1px;
@@ -143,6 +246,7 @@ p {
 
 .container {
     width: 100%;
+
 }    
 
 
@@ -151,6 +255,7 @@ p {
   max-width:100%;
   padding: 40px 10px 15px 15px;
 }
+
 
 
 }
