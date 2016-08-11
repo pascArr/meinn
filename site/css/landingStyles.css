@@ -5,21 +5,20 @@ body {
   font-size: 16px;
   color: #fff;
   background-color: #5a3565;
-  /* This property comes from google.com/fonts/quick-use*/
   font-family: 'Archivo Narrow', sans-serif;
   font-weight:400;
 }
 
 /** HEADER **/
 
-/**#logo-img {
-  background: url('../images/meiLogo250.png') no-repeat;
+.logo-img {
+  background: url('../images/meiLogo200.png') no-repeat;
   width: 250px;
-  height: 200px;
+  height: 125px;
   margin: 25px 15px 10px 0;
 
 
-}**/
+}
 
 #header-nav {
   background-color:#ecece2;
@@ -29,11 +28,9 @@ body {
 
 
 
-
 #section{
   height:1000px;
 }
-
 
 
 .bgimage {
@@ -46,11 +43,10 @@ padding-top:48%;
 
 }
   
-
 h1.section-heading {
   font-family: 'Rokkitt';
   color:    #F5F5F5;
-  text-shadow: rgba(0,0,0,0.5) -1px 0, rgba(0,0,0,0.3) 0 -1px, rgba(255,255,255,0.5) 0 1px, rgba(0,0,0,0.3) -1px -2px;;
+  text-shadow: rgba(0,0,0,0.7) -1px 0, rgba(0,0,0,0.5) 0 -1px, rgba(255,255,255,0.7) 0 1px, rgba(0,0,0,0.5) -1px -2px;;
   /**text-shadow: 4px 4px black;**/
   font-size: 82px;
   margin: 1px;
@@ -74,14 +70,19 @@ h1.section-heading {
   margin: 30px 0;
 }
 
-footer {
-  margin: 50px 0;
-}
+
 
 .navbar-ex1-collapse {
   width:100%;
 }
 
+.btn-lg{
+  padding-top: 15px;
+  font-size:2em;
+  font-weight:900;
+  font-family:"Roboto";
+  color:white;
+}
 
 h1 {
   margin-top: 5%;
@@ -104,16 +105,19 @@ p {
 
 }
 
-#content {
 
-  
+
+#disclaimer {
+
+  font-family:"Open Sans";
   padding: 1% 1% 1% 2%;
-  font-size:1.25em;
+  font-size:1.5em;
+  font-weight:100;
 
 }
 
-#box {
-  background-color: #B45F04;
+#donateButton {
+  background-color: #5a3565
   background-clip: content-box;
   margin-top: 3%;
 
@@ -128,19 +132,20 @@ p {
 @media (min-width: 1200px){
 
 #offset{
-  margin-top: 200px;
+  margin-top: 160px;
 }
 
-
 .navbar-header {
-  height:200px;
-  padding-top: 10px;
+  height:160px;
+  padding-top: 1px;
 
 }  
 
 .container {
     width: 100%;
 }    
+
+
 
 .img-responsive{
   max-width:100%;
@@ -156,12 +161,12 @@ p {
 
 
 #offset{
-  margin-top: 129px;
+  margin-top: 120px;
 }
 
 
 .navbar-header {
-  height:130px;
+  height:120px;
   padding-top: 10px;
 
 }  
@@ -170,14 +175,29 @@ p {
  width: 100%;
 }    
 
+.navbar-brand{
+  height:12px;
+  padding:1px 1px;
+}
+
+
+.logo-img{
+  background: url('../images/meiLogo200.png') no-repeat;
+  height:110px;
+  width: 200px;
+  margin: 1px 5px 1px 0;
+
+}
+
 .img-responsive{
   max-width:75%;
-  padding: 10px 10px 0px 0px;
+  padding: 1px 5px 0px 0px;
 }
 
 
 h1.section-heading {
     font-size: 3em;
+}
 
 }
 
@@ -186,19 +206,31 @@ h1.section-heading {
 @media screen and (min-width: 376px ) and (max-width: 767px){  
 
 #offset{
-  margin-top: 150px;
+  margin-top: 80px;
+}
+
+.navbar-brand{
+  height:80px;
+  padding:10px 5px;
 }
 
 
+.logo-img{
+  background: url('../images/meiLogo125.png') no-repeat;
+  height:110px;
+  width: 200px;
+  margin: 1px 5px 1px 0;
+
+}
 .img-responsive{
   max-width:100%;
   padding: 10px 10px 0px 0px;
 }
 
-.navbar-header {
+/**.navbar-header {
 
   height:60px;
-}
+}**/
 
 h1.section-heading {
     font-size: 2em;
@@ -213,28 +245,37 @@ h1.section-heading {
 @media (min-width: 768px) and (max-width: 991px ){
 
 #offset{
-  margin-top: ;
+  margin-top: 80px;
+}
+
+.navbar-brand{
+  height:80px;
+  padding:10px 5px;
 }
 
 
-.navbar-header {
-  height:130px;
-  padding-top: 10px;
+.logo-img{
+  background: url('../images/meiLogo125.png') no-repeat;
+  height:110px;
+  width: 200px;
+  margin: 1px 5px 1px 0;
 
-}  
-
-.container {
- width: 100%;
-}    
-
+}
 .img-responsive{
-  max-width:75%;
+  max-width:100%;
   padding: 10px 10px 0px 0px;
 }
 
+/**.navbar-header {
+
+  height:60px;
+}**/
 
 h1.section-heading {
-    font-size: 3em;
+    font-size: 2em;
+
+}
+
 
 }
 
@@ -242,17 +283,37 @@ h1.section-heading {
 
 @media (max-width: 375px){
 
-.container {
- width: 100%;
-}    
+#offset{
+  margin-top: 80px;
+}
 
-
-.navbar-header {
-
-  height:110px;
+.navbar-brand{
+  height:80px;
+  padding:10px 5px;
 }
 
 
+.logo-img{
+  background: url('../images/meiLogo125.png') no-repeat;
+  height:100px;
+  width: 200px;
+  margin: 1px 5px 1px 0;
+
+}
+.img-responsive{
+  max-width:75%;
+  padding: 10px 10px 0px 0px;
+}
+
+/**.navbar-header {
+
+  height:60px;
+}**/
+
+h1.section-heading {
+    font-size: 1.1em;
+
+}
 
 
 }
